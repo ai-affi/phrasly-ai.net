@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     
-    <link rel="alternate" hreflang="en" href="https://phrasly-ai.net/" />
+    <link rel="alternate" hreflang="en" href="https://phrasly-ai.net/en/" />
     <link rel="alternate" hreflang="fr" href="https://phrasly-ai.net/fr/" />
     <link rel="alternate" hreflang="es" href="https://phrasly-ai.net/es/" />
     <link rel="alternate" hreflang="de" href="https://phrasly-ai.net/de/" />
@@ -20,7 +20,7 @@
     <link rel="alternate" hreflang="nl" href="https://phrasly-ai.net/nl/" />
     <link rel="alternate" hreflang="ro" href="https://phrasly-ai.net/ro/" />
     <link rel="alternate" hreflang="hr" href="https://phrasly-ai.net/hr/" />
-    <link rel="alternate" hreflang="x-default" href="https://phrasly-ai.net/" />
+    <link rel="alternate" hreflang="x-default" href="https://phrasly-ai.net/en/" />
     
     <style>
         .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
@@ -29,6 +29,12 @@
         .air { line-height: 1.7; }
         .proof-box { border-left: 4px solid #3b82f6; }
     </style>
+<script>
+    // Redirect root to /en/ for SEO consistency
+    if (window.location.pathname === '/' && !window.location.search.includes('noredirect')) {
+        window.location.replace('/en/' + window.location.search + window.location.hash);
+    }
+</script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
 
@@ -74,7 +80,7 @@
                 You write with AI. Everyone does. The problem is when people can tell. Phrasly turns robotic text into human-sounding content — in seconds, not hours.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://phrasly.ai/?via=PHRASLYAI" class="affiliate-link cta-pulse inline-flex items-center justify-center px-8 py-4 bg-white text-blue-700 font-bold text-lg rounded-lg hover:bg-gray-100 transition transform hover:scale-105">
+                <a href="/go/phrasly" class="affiliate-link cta-pulse inline-flex items-center justify-center px-8 py-4 bg-white text-blue-700 font-bold text-lg rounded-lg hover:bg-gray-100 transition transform hover:scale-105">
                     Try Phrasly Free →
                 </a>
                 <a href="#problem" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-bold text-lg rounded-lg hover:bg-white hover:text-blue-700 transition">
@@ -99,15 +105,15 @@
             <div class="space-y-8 air text-lg text-gray-700">
                 <div class="proof-box pl-6 py-2">
                     <h3 class="text-xl font-bold mb-2">AI Detectors Are Getting Smarter — And So Are Professors, Clients & Editors</h3>
-                    <p>Turnitin updated its algorithm. GPTZero flags paraphrased content now. Your professor? They've seen 200 AI-written essays this semester. They know the patterns. <a href="https://phrasly.ai/?via=PHRASLYAI" class="text-blue-600 hover:underline font-semibold" target="_blank">Phrasly handles all of them</a>.</p>
-                    <p class="mt-2">One freelance client told me: "I can smell ChatGPT from the first paragraph." That was the moment I knew manual rewriting wasn't enough. <a href="https://phrasly.ai/?via=PHRASLYAI" class="text-blue-600 hover:underline font-semibold" target="_blank">I switched to Phrasly and never looked back</a>.</p>
+                    <p>Turnitin updated its algorithm. GPTZero flags paraphrased content now. Your professor? They've seen 200 AI-written essays this semester. They know the patterns. <a href="/go/phrasly" class="text-blue-600 hover:underline font-semibold">Phrasly handles all of them</a>.</p>
+                    <p class="mt-2">One freelance client told me: "I can smell ChatGPT from the first paragraph." That was the moment I knew manual rewriting wasn't enough. <a href="/go/phrasly" class="text-blue-600 hover:underline font-semibold">I switched to Phrasly and never looked back</a>.</p>
                 </div>
                 
                 <div class="proof-box pl-6 py-2">
                     <h3 class="text-xl font-bold mb-2">Rewriting Manually Takes Hours. And It Still Sounds Off.</h3>
                     <p>You paste your AI draft into Word. You start changing words. "Utilize" becomes "use." "Furthermore" becomes "also." You spend 3 hours. You run it through GPTZero.</p>
                     <p class="mt-2 font-semibold text-red-600">Still 67% AI detected.</p>
-                    <p class="mt-2">The issue isn't the words. It's the structure. AI writes in predictable patterns. Detectors look for those patterns. Changing synonyms doesn't fix the underlying rhythm. <a href="https://phrasly.ai/?via=PHRASLYAI" class="text-blue-600 hover:underline font-semibold" target="_blank">Phrasly fixes the structure, not just the words</a>.</p>
+                    <p class="mt-2">The issue isn't the words. It's the structure. AI writes in predictable patterns. Detectors look for those patterns. Changing synonyms doesn't fix the underlying rhythm. <a href="/go/phrasly" class="text-blue-600 hover:underline font-semibold">Phrasly fixes the structure, not just the words</a>.</p>
                 </div>
             </div>
         </div>
@@ -123,7 +129,7 @@
             <div class="space-y-8 air text-lg text-gray-700">
                 <div>
                     <h3 class="text-xl font-bold mb-3">What Phrasly Actually Does (In Plain English)</h3>
-                    <p>Phrasly doesn't just swap words. It restructures sentences. It breaks AI patterns. It adds natural variation — the kind of "imperfections" that make human writing feel human. <a href="https://phrasly.ai/?via=PHRASLYAI" class="text-blue-600 hover:underline font-semibold" target="_blank">Try it free and see the difference</a>.</p>
+                    <p>Phrasly doesn't just swap words. It restructures sentences. It breaks AI patterns. It adds natural variation — the kind of "imperfections" that make human writing feel human. <a href="/go/phrasly" class="text-blue-600 hover:underline font-semibold">Try it free and see the difference</a>.</p>
                     <p class="mt-2">Here's what happens under the hood:</p>
                     <ul class="list-disc ml-6 mt-2 space-y-1">
                         <li>Breaks repetitive sentence structures</li>
@@ -138,7 +144,7 @@
                     <h3 class="text-xl font-bold mb-3">Why Phrasly Works When Others Don't</h3>
                     <p>Most "humanizers" are just paraphrasing tools with a new name. They run your text through a thesaurus and call it a day. Detectors catch that instantly.</p>
                     <p class="mt-2">Phrasly uses a different approach. It analyzes the <em>pattern</em> of your text — the rhythm, the predictability, the statistical fingerprints that detectors look for. Then it rebuilds your content from the ground up, keeping your ideas but changing the structure completely.</p>
-                    <p class="mt-2 font-semibold text-green-600">The result? Content that reads like you wrote it at 2 AM the night before the deadline. Because that's what human writing looks like. <a href="https://phrasly.ai/?via=PHRASLYAI" class="text-blue-600 hover:underline font-semibold" target="_blank">Start humanizing now</a>.</p>
+                    <p class="mt-2 font-semibold text-green-600">The result? Content that reads like you wrote it at 2 AM the night before the deadline. Because that's what human writing looks like. <a href="/go/phrasly" class="text-blue-600 hover:underline font-semibold">Start humanizing now</a>.</p>
                 </div>
             </div>
         </div>
@@ -203,7 +209,7 @@
                 
                 <div class="bg-white rounded-xl p-6 shadow-md">
                     <h3 class="text-xl font-bold mb-4">Turnitin, Originality.ai, Copyleaks — All Bypassed</h3>
-                    <p class="text-gray-700 air">We tested Phrasly against every major detector in 2026. Same text, same source, same meaning. Different structure. Different score. <a href="https://phrasly.ai/?via=PHRASLYAI" class="text-blue-600 hover:underline font-semibold" target="_blank">Get the same results — try Phrasly for $2</a>.</p>
+                    <p class="text-gray-700 air">We tested Phrasly against every major detector in 2026. Same text, same source, same meaning. Different structure. Different score. <a href="/go/phrasly" class="text-blue-600 hover:underline font-semibold">Get the same results — try Phrasly for $2</a>.</p>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
                         <div class="bg-green-100 rounded-lg p-3 text-center">
                             <div class="font-bold text-green-700">Turnitin</div>
@@ -237,19 +243,19 @@
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-gray-50 rounded-xl p-6">
                     <h3 class="text-lg font-bold mb-2">Students Who Can't Afford to Fail</h3>
-                    <p class="text-gray-600">"I had a 20-page paper due. ChatGPT wrote it in 2 hours. Phrasly made it undetectable in 10 minutes. Professor gave me an A-. Never told a soul." — Jake, University of Michigan. <a href="https://phrasly.ai/?via=PHRASLYAI" class="text-blue-600 hover:underline font-semibold" target="_blank">Get your A-grade too</a>.</p>
+                    <p class="text-gray-600">"I had a 20-page paper due. ChatGPT wrote it in 2 hours. Phrasly made it undetectable in 10 minutes. Professor gave me an A-. Never told a soul." — Jake, University of Michigan. <a href="/go/phrasly" class="text-blue-600 hover:underline font-semibold" >Get your A-grade too</a>.</p>
                 </div>
                 <div class="bg-gray-50 rounded-xl p-6">
                     <h3 class="text-lg font-bold mb-2">Freelancers Delivering 10x Faster</h3>
-                    <p class="text-gray-600">"I write 10 blog posts per week for clients. Used to spend 6 hours editing AI output. Now I spend 45 minutes. Phrasly + ChatGPT = my entire workflow." — Sarah, UK Content Writer. <a href="https://phrasly.ai/?via=PHRASLYAI" class="text-blue-600 hover:underline font-semibold" target="_blank">Speed up your workflow</a>.</p>
+                    <p class="text-gray-600">"I write 10 blog posts per week for clients. Used to spend 6 hours editing AI output. Now I spend 45 minutes. Phrasly + ChatGPT = my entire workflow." — Sarah, UK Content Writer. <a href="/go/phrasly" class="text-blue-600 hover:underline font-semibold" >Speed up your workflow</a>.</p>
                 </div>
                 <div class="bg-gray-50 rounded-xl p-6">
                     <h3 class="text-lg font-bold mb-2">Content Creators Scaling Without Burning Out</h3>
-                    <p class="text-gray-600">"YouTube scripts, newsletter drafts, social posts — I generate everything with AI, then run it through Phrasly. Sounds like me, not a robot." — David, Marketing Manager. <a href="https://phrasly.ai/?via=PHRASLYAI" class="text-blue-600 hover:underline font-semibold" target="_blank">Scale your content</a>.</p>
+                    <p class="text-gray-600">"YouTube scripts, newsletter drafts, social posts — I generate everything with AI, then run it through Phrasly. Sounds like me, not a robot." — David, Marketing Manager. <a href="/go/phrasly" class="text-blue-600 hover:underline font-semibold" >Scale your content</a>.</p>
                 </div>
                 <div class="bg-gray-50 rounded-xl p-6">
                     <h3 class="text-lg font-bold mb-2">Business Owners Writing Like Pros</h3>
-                    <p class="text-gray-600">"English isn't my first language. I draft in Spanish, translate with AI, then humanize with Phrasly. Clients think I hired a native copywriter." — Maria, Spain. <a href="https://phrasly.ai/?via=PHRASLYAI" class="text-blue-600 hover:underline font-semibold" target="_blank">Write like a native</a>.</p>
+                    <p class="text-gray-600">"English isn't my first language. I draft in Spanish, translate with AI, then humanize with Phrasly. Clients think I hired a native copywriter." — Maria, Spain. <a href="/go/phrasly" class="text-blue-600 hover:underline font-semibold" >Write like a native</a>.</p>
                 </div>
             </div>
         </div>
@@ -265,15 +271,15 @@
             <div class="space-y-6">
                 <div class="bg-white rounded-xl p-6 shadow-sm">
                     <h3 class="text-lg font-bold mb-2">Why Most AI Humanizers Still Get Caught</h3>
-                    <p class="text-gray-700">They use synonym replacement. Detectors don't look for words — they look for patterns. "Utilize" vs "use" doesn't matter when the sentence structure is still AI-predictable. <a href="https://phrasly.ai/?via=PHRASLYAI" class="text-blue-600 hover:underline font-semibold" target="_blank">Phrasly rewrites structure, not just words</a>.</p>
+                    <p class="text-gray-700">They use synonym replacement. Detectors don't look for words — they look for patterns. "Utilize" vs "use" doesn't matter when the sentence structure is still AI-predictable. <a href="/go/phrasly" class="text-blue-600 hover:underline font-semibold" >Phrasly rewrites structure, not just words</a>.</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 shadow-sm">
                     <h3 class="text-lg font-bold mb-2">What Makes Phrasly Different in 2026</h3>
                     <ul class="list-disc ml-6 mt-2 space-y-1 text-gray-700">
-                        <li><strong>Structural rewriting:</strong> Changes how sentences flow, not just the words. <a href="https://phrasly.ai/?via=PHRASLYAI" class="text-blue-600 hover:underline font-semibold" target="_blank">See how it works</a></li>
+                        <li><strong>Structural rewriting:</strong> Changes how sentences flow, not just the words. <a href="/go/phrasly" class="text-blue-600 hover:underline font-semibold" >See how it works</a></li>
                         <li><strong>Mode-specific tuning:</strong> Academic mode keeps citations intact. Creative mode adds voice.</li>
                         <li><strong>Built-in detector:</strong> Check your score before submitting. No surprises.</li>
-                        <li><strong>Watermark protection:</strong> Future-proof against next-generation detectors. <a href="https://phrasly.ai/?via=PHRASLYAI" class="text-blue-600 hover:underline font-semibold" target="_blank">Stay ahead of detectors</a></li>
+                        <li><strong>Watermark protection:</strong> Future-proof against next-generation detectors. <a href="/go/phrasly" class="text-blue-600 hover:underline font-semibold" >Stay ahead of detectors</a></li>
                     </ul>
                 </div>
             </div>
@@ -299,7 +305,7 @@
                         <li>✓ 5,000 words per process</li>
                         <li>✓ Advanced AI bypass</li>
                     </ul>
-                    <a href="https://phrasly.ai/?via=PHRASLYAI" class="affiliate-link block w-full text-center py-3 border-2 border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition">Start Trial →</a>
+                    <a href="/go/phrasly" class="affiliate-link block w-full text-center py-3 border-2 border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition">Start Trial →</a>
                 </div>
                 <div class="bg-blue-600 rounded-2xl p-6 text-white transform scale-105 shadow-xl">
                     <div class="bg-blue-500 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full inline-block mb-3">Most Popular</div>
@@ -313,7 +319,7 @@
                         <li>✓ 5,000 words per process</li>
                         <li>✓ Beta access to new AI tools</li>
                     </ul>
-                    <a href="https://phrasly.ai/?via=PHRASLYAI" class="affiliate-link block w-full text-center py-3 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-100 transition cta-pulse">Upgrade Now →</a>
+                    <a href="/go/phrasly" class="affiliate-link block w-full text-center py-3 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-100 transition cta-pulse">Upgrade Now →</a>
                 </div>
                 <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
                     <h3 class="text-xl font-bold mb-2">Free Trial</h3>
@@ -325,7 +331,7 @@
                         <li>✓ Standard mode only</li>
                         <li>✗ No advanced bypass</li>
                     </ul>
-                    <a href="https://phrasly.ai/?via=PHRASLYAI" class="affiliate-link block w-full text-center py-3 border-2 border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition">Try Free →</a>
+                    <a href="/go/phrasly" class="affiliate-link block w-full text-center py-3 border-2 border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition">Try Free →</a>
                 </div>
             </div>
         </div>
@@ -339,7 +345,7 @@
                 <span class="text-xl font-bold">4.8/5 on Trustpilot</span>
             </div>
             <p class="text-gray-600 mb-3">Based on 2,400+ real user reviews</p>
-            <a href="https://www.trustpilot.com/review/phrasly.ai" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">
+            <a href="https://www.trustpilot.com/review/phrasly.ai" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">
                 Read reviews on Trustpilot →
             </a>
         </div>
@@ -410,7 +416,7 @@
             <p class="text-xl text-blue-100 mb-8">
                 Join 50,000+ students, freelancers, and creators who stopped worrying about AI detection. Try Phrasly for $2. If it doesn't work, you lost less than a coffee.
             </p>
-            <a href="https://phrasly.ai/?via=PHRASLYAI" class="affiliate-link inline-flex items-center justify-center px-10 py-5 bg-white text-blue-700 font-bold text-xl rounded-lg hover:bg-gray-100 transition transform hover:scale-105 cta-pulse">
+            <a href="/go/phrasly" class="affiliate-link inline-flex items-center justify-center px-10 py-5 bg-white text-blue-700 font-bold text-xl rounded-lg hover:bg-gray-100 transition transform hover:scale-105 cta-pulse">
                 Try Phrasly for $2 →
             </a>
             <p class="mt-4 text-blue-200 text-sm">3-day access • Cancel anytime • 20% commission to affiliates</p>
@@ -460,23 +466,23 @@
                         Follow Phrasly on social media
                     </div>
                     <div class="flex space-x-4">
-                        <a href="https://discord.gg/jbNtB6DPnr" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
+                        <a href="https://discord.gg/jbNtB6DPnr" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
                             <span class="sr-only">Discord</span>
                             <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 640 512"><path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg>
                         </a>
-                        <a href="https://tiktok.com/@phrasly" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
+                        <a href="https://tiktok.com/@phrasly" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
                             <span class="sr-only">TikTok</span>
                             <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
                         </a>
-                        <a href="https://www.linkedin.com/company/phrasly-ai/about/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
+                        <a href="https://www.linkedin.com/company/phrasly-ai/about/" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
                             <span class="sr-only">LinkedIn</span>
                             <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
                         </a>
-                        <a href="https://twitter.com/phrasly_ai" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
+                        <a href="https://twitter.com/phrasly_ai" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
                             <span class="sr-only">Twitter</span>
                             <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
                         </a>
-                        <a href="https://youtube.com/@Phrasly" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
+                        <a href="https://youtube.com/@Phrasly" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
                             <span class="sr-only">YouTube</span>
                             <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
                         </a>
